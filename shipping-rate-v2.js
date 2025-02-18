@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const timerInterval = setInterval(function () {
             if (timeLeft <= 0) {
                 clearInterval(timerInterval);
-                messageText.innerHTML = `Оформіть замовлення зараз, і ми відправимо його <div class="shipping-today">сьогодні!</div>`;
+                messageText.innerHTML = `Оформіть замовлення зараз, і ми відправимо його <span class="shipping-today">сьогодні!</span>`;
                 timerText.textContent = "";  // Hide timer when it reaches zero
             } else {
-                messageText.innerHTML = `Оформіть замовлення протягом <span class="shipping-timer">${formatTime(timeLeft)}</span>, і ми відправимо його <div class="shipping-today">сьогодні!</div>`;
+                messageText.innerHTML = `Оформіть замовлення протягом <span class="shipping-timer">${formatTime(timeLeft)}</span>, і ми відправимо його <span class="shipping-today">сьогодні!</span>`;
                 timeLeft--;
             }
         }, 1000);
     } else {
-        messageText.innerHTML = `Оформіть замовлення зараз, і ми відправимо його <div class="shipping-tomorrow">завтра!</div>`;
+        messageText.innerHTML = `Оформіть замовлення зараз, і ми відправимо його <span class="shipping-tomorrow">завтра!</span>`;
         timerText.textContent = "";  // Hide timer when it's not active
     }
 });
