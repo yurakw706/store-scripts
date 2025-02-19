@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Saturday
     else if (day === 6) { 
-        if (hour < 11 || (hour === 11 && minute === 0)) {
-            message = `Оформіть замовлення до <span class="due-time">11:00</span>, і ми відправимо його <span class="shipping-today">сьогодні!</span>`;
+        if (hour < 13 || (hour === 13 && minute === 0)) {
+            message = `Оформіть замовлення до <span class="due-time">13:00</span>, і ми відправимо його <span class="shipping-today">сьогодні!</span>`;
         } else {
             message = `Оформіть замовлення <span class="now">зараз</span>, і ми відправимо його <span class="shipping-monday">в понеділок!</span>`;
         }
