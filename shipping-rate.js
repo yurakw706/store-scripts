@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     messageText.textContent = "Оформіть замовлення зараз, і ми відправимо його сьогодні!";
                     timerText.textContent = "";  // Hide timer when it reaches zero
                 } else {
-                    messageText.textContent = `Оформіть замовлення протягом &nbsp; `;
+                    messageText.textContent = `Оформіть замовлення протягом:  `;
                     timerText.textContent = `${formatTime(timeLeft)}, і ми відправимо його сьогодні!`;
                     timeLeft--;
                 }
