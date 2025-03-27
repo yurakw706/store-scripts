@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Message with separate span for "59 грн"
             var message = `
                 <div class="cheap-shipping-text">
-                    При оплаті карткою онлайн або на рахунок ФОП, доставка до Нової Пошти за 
+                    При оплаті карткою онлайн або на рахунок ФОП, доставка до Нової Пошти всього за -
                     <span class="cheap-shipping-cost">59 грн</span>
                 </div>
             `;
